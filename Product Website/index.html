@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | ShopEase</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">🛍️ ShopEase</a>
+  <button class="icon-btn menu-btn" id="menuBtn" aria-label="Toggle menu" type="button">☰</button>
+  <nav id="mainNav"><a href="index.html" class=active>Home</a><a href="products.html">Products</a><a href="index.html#categories">Categories</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></nav>
+  <div class="header-tools">
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle dark mode">🌙</button>
+    <button class="icon-btn" id="cartBtn" type="button" aria-label="Open cart">🛒 <span id="cartCount">0</span></button>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Good things for everyday life, delivered simply.</h1>
+    <p>Headphones, jackets, bags and more. Browse the collection, fill your cart and see your total instantly.</p>
+    <button class="btn big" id="shopNow" type="button">Shop Now</button>
+  </div>
+  <img src="images/hero.svg" alt="Collection of headphones, shoes, watch, sunglasses, tote bag and jacket">
+</section>
+<section class="section" id="featured">
+  <h2>Featured products</h2>
+  <div class="grid">
+<article class="card" data-id="1" data-cat="Electronics" data-name="Wireless Headphones">
+  <img src="images/p1.svg" alt="Wireless Headphones">
+  <div class="card-body"><span class="tag">Electronics</span><h3>Wireless Headphones</h3><p class="price">₹2,499</p><p class="desc">Over-ear Bluetooth headphones with deep bass and 20 hours of battery life.</p>
+  <div class="actions"><button class="btn ghost view-btn" type="button">View Details</button><button class="btn add-btn" type="button">Add to Cart</button></div></div>
+</article>
+<article class="card" data-id="2" data-cat="Electronics" data-name="Smart Watch">
+  <img src="images/p2.svg" alt="Smart Watch">
+  <div class="card-body"><span class="tag">Electronics</span><h3>Smart Watch</h3><p class="price">₹3,999</p><p class="desc">Track steps, heart rate and notifications with a bright AMOLED display.</p>
+  <div class="actions"><button class="btn ghost view-btn" type="button">View Details</button><button class="btn add-btn" type="button">Add to Cart</button></div></div>
+</article>
+<article class="card" data-id="3" data-cat="Electronics" data-name="Bluetooth Speaker">
+  <img src="images/p3.svg" alt="Bluetooth Speaker">
+  <div class="card-body"><span class="tag">Electronics</span><h3>Bluetooth Speaker</h3><p class="price">₹1,799</p><p class="desc">Portable water-resistant speaker with clear sound and 12 hours of playtime.</p>
+  <div class="actions"><button class="btn ghost view-btn" type="button">View Details</button><button class="btn add-btn" type="button">Add to Cart</button></div></div>
+</article>
+<article class="card" data-id="4" data-cat="Clothing" data-name="Cotton T-Shirt">
+  <img src="images/p4.svg" alt="Cotton T-Shirt">
+  <div class="card-body"><span class="tag">Clothing</span><h3>Cotton T-Shirt</h3><p class="price">₹599</p><p class="desc">Soft, breathable 100% cotton tee in a relaxed everyday fit.</p>
+  <div class="actions"><button class="btn ghost view-btn" type="button">View Details</button><button class="btn add-btn" type="button">Add to Cart</button></div></div>
+</article>
+  </div>
+  <p class="center"><a class="btn ghost" href="products.html">See all products</a></p>
+</section>
+<section class="section alt" id="categories">
+  <h2>Shop by category</h2>
+  <div class="cat-grid"><a class="cat" href="products.html?cat=Electronics"><span class="cat-ico">🎧</span><h3>Electronics</h3><p>Audio, watches and gadgets</p></a><a class="cat" href="products.html?cat=Clothing"><span class="cat-ico">👕</span><h3>Clothing</h3><p>Tees, jackets and shoes</p></a><a class="cat" href="products.html?cat=Accessories"><span class="cat-ico">👜</span><h3>Accessories</h3><p>Bags, eyewear and more</p></a></div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div><a class="logo" href="index.html">🛍️ ShopEase</a><p>Everyday essentials, easy shopping.</p></div>
+    <div><h4>Follow us</h4><p class="social"><a href="#">Facebook</a> <a href="#">Instagram</a> <a href="#">Twitter</a> <a href="#">YouTube</a></p></div>
+  </div>
+  <p class="copy">© 2026 ShopEase. Sample project for Web Technology Lab. No real transactions.</p>
+</footer>
+<aside class="cart-panel" id="cartPanel" aria-label="Shopping cart">
+  <div class="cart-head"><h2>Your cart</h2><button class="icon-btn" id="closeCart" type="button" aria-label="Close cart">✕</button></div>
+  <div id="cartItems"></div>
+  <div class="cart-foot"><p>Total: <strong id="cartTotal">₹0</strong></p><button class="btn ghost" id="clearCart" type="button">Clear cart</button></div>
+</aside>
+<div class="overlay" id="overlay"></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mName">
+  <button class="icon-btn modal-close" id="closeModal" type="button">Close ✕</button>
+  <img id="mImg" src="" alt="">
+  <div class="modal-body"><span class="tag" id="mCat"></span><h2 id="mName"></h2><p class="price" id="mPrice"></p><p id="mDesc"></p>
+  <button class="btn" id="mAdd" type="button">Add to Cart</button></div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>

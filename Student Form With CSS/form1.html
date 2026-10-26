@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+    <style>
+        /* General Body Settings */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Container styling to wrap everything neatly */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Typography & Headers */
+        h1 {
+            color: #1a365d;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 5px;
+            border-bottom: 3px solid #3182ce;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: #2b6cb0;
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #4a5568;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: #4a5568;
+        }
+
+        /* Links styling */
+        a {
+            color: #3182ce;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #2b6cb0;
+            text-decoration: underline;
+        }
+
+        /* Lists styling */
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #4a5568;
+        }
+
+        /* Tables layout and clean styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2b6cb0;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        tr {
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7fafc;
+        }
+        form {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #4a5568;
+        }
+
+        /* Style for inline radio/checkbox labels */
+        .inline-label {
+            display: inline;
+            font-weight: normal;
+            margin-right: 15px;
+            margin-left: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        input[type="tel"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #3182ce;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+        }
+
+        /* Aligning checkbox and radio sizes */
+        input[type="radio"],
+        input[type="checkbox"] {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        /* Fancy Interactive Buttons */
+        .btn-container {
+            margin-top: 25px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #3182ce;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2b6cb0;
+        }
+
+        input[type="reset"] {
+            background-color: #e2e8f0;
+            color: #4a5568;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #cbd5e0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Government College of Engineering and Technology (GCET)</h1>
+    
+    <h2>Student Information</h2>
+    <h3>My Name: Aayushmaan</h3>
+    <p>Hello! My name is Aayushmaan. I am a student of Government College of Engineering and Technology. I am studying Bachelor of Technology in Computer Science. I am interested in computers, programming, and learning new things.</p>
+
+    <h2>Useful Links</h2>
+    <p>
+        <a href="https://www.google.com" target="_blank">Visit Google</a> | 
+        <a href="https://www.wikipedia.org" target="_blank">Visit Wikipedia</a>
+    </p>
+
+    <h2>Educational Qualifications</h2>
+    <ol>
+        <li>10th Class - 84%</li>
+        <li>12th Class - 74%</li>
+        <li>BTech 1st Semester - 7.3 CGPA</li>
+    </ol>
+
+    <h2>My Hobbies and Skills</h2>
+    <ul>
+        <li>Reading Books</li>
+        <li>Playing Cricket</li>
+        <li>Listening to Music</li>
+        <li>Computer Programming</li>
+        <li>Drawing</li>
+    </ul>
+
+    <h2>Semester Marks</h2>
+    <table>
+        <tr>
+            <th>Semester</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>1st</td>
+            <td>Electronics</td>
+            <td>57</td>
+        </tr>
+        <tr>
+            <td>1st</td>
+            <td>Mathematics</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td>1st</td>
+            <td>Universal Human Values</td>
+            <td>70</td>
+        </tr>
+        <tr style="background-color: #fed7d7;">
+            <td>1st</td>
+            <td>Programming in C</td>
+            <td style="color: #c53030; font-weight: bold;">fail hu</td>
+        </tr>
+    </table>
+
+    <h2>Weekly Class Timetable</h2>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+            <th>12:00 - 1:00</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>English</td>
+            <td>Maths</td>
+            <td>C Programming</td>
+            <td>Computer</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Maths</td>
+            <td>English</td>
+            <td>Computer</td>
+            <td>C Programming</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>C Programming</td>
+            <td>Computer</td>
+            <td>Maths</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Computer</td>
+            <td>C Programming</td>
+            <td>English</td>
+            <td>Maths</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Maths</td>
+            <td>Computer</td>
+            <td>C Programming</td>
+            <td>English</td>
+        </tr>
+    </table>
+
+    <h2>Student Contact / Registration Form</h2>
+    <form action="submit.html" method="post">
+        <div class="form-group">
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="example@email.com">
+        </div>
+
+        <div class="form-group">
+            <label>Date of Birth:</label>
+            <input type="date" name="dob">
+        </div>
+
+        <div class="form-group">
+            <label>Mobile Number:</label>
+            <input type="tel" name="mobile" placeholder="1234567890">
+        </div>
+
+        <div class="form-group">
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" id="male"><label for="male" class="inline-label">Male</label>
+            <input type="radio" name="gender" value="female" id="female"><label for="female" class="inline-label">Female</label>
+        </div>
+
+        <div class="form-group">
+            <label>Course:</label>
+            <select name="course">
+                <option>B.Tech</option>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>BA</option>
+                <option>B.Com</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Hobbies:</label>
+            <input type="checkbox" name="hobby" value="reading" id="reading"><label for="reading" class="inline-label">Reading</label>
+            <input type="checkbox" name="hobby" value="sports" id="sports"><label for="sports" class="inline-label">Sports</label>
+            <input type="checkbox" name="hobby" value="music" id="music"><label for="music" class="inline-label">Music</label>
+        </div>
+
+        <div class="form-group">
